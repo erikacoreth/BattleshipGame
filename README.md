@@ -1,26 +1,31 @@
-1. Import random, set up the global variable for grid size and number of ships, and initialize a 2D array to represent the grid.
+# Battleship Game in Python
 
-2. drawBoard function
--The funciton for drawBoard should display the grid, print column headers, and print rows with rowheaders.
--The numbers 0-9 should be displayed along the top and left sides of the drawing to easily identify each column/row on the board.  Each square should display one of four possible characters
- -A dot ‘.‘ for any square that does not contain a ship and that has not yet been called out by the user at the keyboard
- -The letter ‘S’ to represent one of the 5 ships on the board
- -The letter ‘O’ to represent a row/column that was called out but did not contain a ship (i.e., a “miss”)
- -The letter ‘X’ to represent a row/column that was called out and there was a ship there (i.e., a “hit”)
+## Overview
+This Python-based Battleship game is a simple, console-based version of the classic game where players attempt to sink each other's ships by guessing their locations on a grid. This implementation is designed for a single player against the computer, where the computer places ships randomly on a 10x10 grid.
 
-3. setupBoard function
--initizlize's the grid with ships placed randomly
- #place a ship only if the cell is empty
+## Features
+- **Single-Player Mode**: Play against the computer with randomly placed ships.
+- **Simple Console Interface**: Easy-to-use console interface for inputting guesses and seeing game status.
+- **Automatic Ship Placement**: Ships are automatically and randomly placed on the grid at the start of the game.
+- **Hit or Miss Feedback**: Immediate feedback on whether a guess results in a hit or miss.
+- **End-Game Detection**: The game detects when all ships have been sunk and ends the game.
 
-4. checkHitorMiss function
--If a square contains a ship, the square on the board should be updated to show a 'X' and the string returned should be 'HIT'
--Otherwise, that square on the board should be updated to an ‘O’ to represent a miss and return the String “MISS”
+## How to Run
+To run the Battleship game, you'll need Python installed on your computer. Follow these steps to get started:
 
-5. isGameOver function
--assess the board to see if all th ships on that board have been hit/sunk
+1. **Clone the Repository**:
+    ```
+    git clone https://github.com/yourusername/battleship-game.git
+    ```
+2. **Navigate to the Directory**:
+    ```
+    cd battleship-game
+    ```
+3. **Run the Game**:
+    ```
+    python battleship.py
+    ```
 
-6. Main function
--main game loop
--gets user input for row and column
--checks hit or miss and display result
--end the code with running the main function to start the game
+
+
+
